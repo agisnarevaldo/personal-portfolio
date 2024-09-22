@@ -1,13 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Card() {
+interface CardProps {
+    title: string;
+    description: string;
+    image: string;
+};
+
+export default function Card( {title, description, image}: Readonly<CardProps>) {
     return (
-        <div className="border border-neutral-500 p-8 flex flex-col gap-2 w-[420px] rounded-lg">
-            <h2 className="text-2xl font-semibold">Desa Dirgahayu</h2>
+        <Link href="#" className="border border-neutral-500 p-8 flex flex-col gap-2 w-[420px] rounded-lg">
+            <h2 className="text-2xl font-semibold">{title}</h2>
             <p>
-                Web Profile Desa Dirgahayu, sebuah desa yang terletak di Kecamatan Kadipaten, Kabupaten Tasikmalaya.
+                {description}
             </p>
-            <Image src="/desadirgahayu.png" alt="Desa Dirgahayu" width={400} height={100} />
-        </div>
+            <Image src={image} alt="image" width={400} height={100}/>
+        </Link>
     )
 }
