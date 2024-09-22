@@ -21,7 +21,7 @@ export default function Navbar() {
             icon: (
                 <IconTool  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "/projects",
+            href: "/#project",
         },
         {
             title: "About",
@@ -47,8 +47,7 @@ export default function Navbar() {
     ];
     return (
         <FloatingDock
-            desktopClassName="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2"
-            mobileClassName="fixed bottom-4 md:bottom-8 right-4"
+            desktopClassName="sticky bottom-4 md:bottom-8 transform w-max"
             items={links}
         />
     )
