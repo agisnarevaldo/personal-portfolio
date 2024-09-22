@@ -17,7 +17,11 @@ export default function Page () {
             <p>Showcase of my works on frontend development.</p>
 
             <div>
-                <Card />
+                <Card
+                    title="Desa Dirgahayu"
+                    description="Web Profile Desa Dirgahayu, sebuah desa yang terletak di Kecamatan Kadipaten, Kabupaten Tasikmalaya."
+                    image="/desadirgahayu.png"
+                />
             </div>
         </div>
     )
