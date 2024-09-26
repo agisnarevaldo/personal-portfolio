@@ -15,20 +15,19 @@ export default function Navbar() {
             ),
             href: "/",
         },
-
-        {
-            title: "Projects",
-            icon: (
-                <IconTool  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "/#project",
-        },
         {
             title: "About",
             icon: (
                 <IconUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "/#about",
+        },
+        {
+            title: "Projects",
+            icon: (
+                <IconTool  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            ),
+        href: "/#project",      
         },
         {
             title: "Instagram",
